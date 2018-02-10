@@ -1,4 +1,4 @@
-package main
+package _0_bubble_sort
 
 import (
 	"fmt"
@@ -7,6 +7,9 @@ import (
 func bubble_sort(yarray []int) {
 
 	n := len(yarray)
+	if n < 2 {
+		return
+	}
 
 	for j := 0; j < n-1; j++ {
 		for i := 0; i < n-1-j; i++ {
